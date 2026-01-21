@@ -9,3 +9,4 @@
 ## Additional development notes
 
 * Where I used exceptions, I mostly threw them manually. This is because while Laravel's exception handling and reporting is a very valuable tool, creating custom exceptions adds a lot of weight to a simple project. Throwing exceptions manually allows for custom messages in a much lighter-weight way.
+* The StateMachineService has unit tests in the tests/Unit directory. The StateMachineController's tests are in tests/Feature (this is my usual practice for HTTP tests). 
