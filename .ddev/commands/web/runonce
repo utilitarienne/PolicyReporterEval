@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# COMPOSER
+
+composer install
+npm install
+npm run build
+
+# SETUP ENV
+
+cp .env.example .env
+php artisan key:generate
