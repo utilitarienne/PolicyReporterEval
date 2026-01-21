@@ -3,7 +3,11 @@
 ## Setup Instructions
 
 * The project contains a .ddev directory and is runnable with `ddev start`.
-* Once ddev is started, you will need to run `ddev runonce`.
+* Once ddev is started, you will need to run `ddev runonce`. This will run several initialization tasks including:
+    * running `composer install`
+    * handling npm-related setup and building
+    * setting up the `.env` file and a secure application key
+* At any time you can start the environment with `ddev start`
 
 # Review Instructions
 
